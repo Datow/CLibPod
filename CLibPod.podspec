@@ -39,4 +39,17 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.subspec 'OpenSSL' do |openssl|
+      openssl.platform = :ios, '8.0'
+      openssl.requires_arc = false
+
+      openssl.source_files = 'Libraries/include/openssl/*.h'
+      openssl.public_header_files = 'Libraries/include/openssl/*.h'
+      openssl.header_dir = 'openssl'
+
+      openssl.preserve_paths = 'Libraries/lib/libcrypto.a', 'Libraries/lib/libssl.a'
+      openssl.vendored_libraries = 'Libraries/lib/libcrypto.a', 'Libraries/lib/libssl.a'
+      openssl.libraries = 'crypto', 'ssl'
+  end
 end
