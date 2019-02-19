@@ -1,0 +1,16 @@
+PODS:
+  - CLibPod (0.1.0)
+
+DEPENDENCIES:
+  - CLibPod (from `../`)
+
+EXTERNAL SOURCES:
+  CLibPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CLibPod: 2f1f4bdfd194e0ee5f2591dbd3ffd5540a4309a8
+
+PODFILE CHECKSUM: 20cc127c2d421f6cf3c76fcc3c4c10e86a047bc7
+
+COCOAPODS: 1.5.3

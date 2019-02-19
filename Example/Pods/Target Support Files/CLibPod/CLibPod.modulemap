@@ -1,0 +1,6 @@
+framework module CLibPod {
+  umbrella header "CLibPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
